@@ -16,7 +16,7 @@
         />
     </head>
     <body class="mdui-color-black">
-        <div class="mdui-toolbar mdui-headroom">
+        <div class="mdui-toolbar" mdui-headroom>
             <a mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
             <img src="blackrosestudio16d2.png" class="mdui-center">
             <div class="mdui-toolbar-spacer"></div>
@@ -66,11 +66,50 @@
                 <div class="mdui-divider-light"></div>
             </ul>
         </div>
+        </body>
+        <br/>
+        <h1 class="mdui-text-center">开发者专栏</h1>
+        <div class="mdui-card">
+
+            <!-- 卡片头部，包含头像、标题、副标题 -->
+            <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="touxiang.png"/>
+                <div class="mdui-card-header-title">Cyanogen</div>
+                <div class="mdui-card-header-subtitle">2439236744@qq.com</div>
+            </div>
+          
+            <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+            <div class="mdui-card-media">
+          
+              <!-- 卡片中可以包含一个或多个菜单按钮 -->
+              <div class="mdui-card-menu">
+                <button class="mdui-btn mdui-btn-icon mdui-text-color-white">
+                  <i class="mdui-icon material-icons">share</i>
+                </button>
+              </div>
+            </div>
+          
+            <!-- 卡片的标题和副标题 -->
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">开源项目</div>
+              <div class="mdui-card-primary-subtitle">已托管至Github</div>
+            </div>
+          
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content">目前已开源的项目:官网</div>
+          
+            <!-- 卡片的按钮 -->
+            <div class="mdui-card-actions">
+              <button class="mdui-btn mdui-ripple" id="githublink" onclick="window.location.href='https://github.com/JerryDeng0422/blackrosestudio'">跳转至Github存储库</button>
+            </div>
+          
+          </div>
         <!-- MDUI JavaScript -->
         <script
         src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
         integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
         crossorigin="anonymous"
-        ></script>
+        >
+        </script>
     </body>
 </html>
